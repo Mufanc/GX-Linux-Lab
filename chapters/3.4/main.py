@@ -6,13 +6,13 @@ student = input('学号：')
 
 
 def bytes2string(_data):
-    return ''.join([f'{ch:0>2x}' for ch in _data]).upper()
+    return ''.join([f'{ch:0>2X}' for ch in _data])
 
 
 data = b'\xaa\x55' + bytes([ord(ch) - ord('0') for ch in student])
 pipe = Serial(list(serial.tools.list_ports.comports()[0])[0], 1200)
 
-serial, passwd = bytes2string(pipe.read(13)), None
+serial, passwd = bytes2string(pipe.read(13)[2:]), None
 print(f'序列号：{serial}')
 
 pipe.write(data)
