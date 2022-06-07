@@ -7,3 +7,5 @@
 * [3.4 - 计算机串口数据收发与测量](https://github.com/Mufanc/GX-Linux-Lab/tree/master/chapters/3.4)
 
 * [3.6 - RS485 信号的测量](https://github.com/Mufanc/GX-Linux-Lab/tree/master/chapters/3.6)
+
+* [3.7 - RS485 总线数据收发](https://github.com/Mufanc/GX-Linux-Lab/tree/master/chapters/3.7)
